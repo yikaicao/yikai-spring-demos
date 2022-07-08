@@ -11,19 +11,19 @@ import service.UserServiceImpl;
 @Configuration
 public class BeansConfig {
 
-    @Bean("aUserDao")
+    @Bean("aUserDao-could-be-any-name")
     public UserDaoImpl userDao() {
         return new UserDaoImpl();
     }
 
-    @Bean("userService")
+    @Bean("userService-could-be-any-name")
     public UserServiceImpl userService() {
         UserServiceImpl userService =  new UserServiceImpl();
         userService.setUserDao(userDao());
         return userService;
     }
 
-    @Bean("logAspect")
+    @Bean("logAspect-could-be-any-name")
     public LogAspect logAspect() {
         return new LogAspect();
     }

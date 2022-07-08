@@ -12,6 +12,7 @@
     <modules>
         <module>001-spring-framework-demo-xml</module>
         <module>002-spring-framework-demo-java</module>
+        <module>003-spring-framework-demo-annotation</module>
     </modules>
 
     <properties>

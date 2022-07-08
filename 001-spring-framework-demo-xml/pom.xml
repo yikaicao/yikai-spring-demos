@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-framework-demo-xml</artifactId>
+    <artifactId>001-spring-framework-demo-xml</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

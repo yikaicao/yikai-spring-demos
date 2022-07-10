@@ -11,9 +11,9 @@ public class BioServer {
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(10200);
         while (true) {
-            System.out.println("等待链接");
+            System.out.println("waiting for connection");
             Socket clientSocket = serverSocket.accept();
-            System.out.println("有客户端链接");
+            System.out.println("client connected");
             executor.submit(() -> {
                 try {
                     handler(clientSocket);
@@ -26,14 +26,14 @@ public class BioServer {
 
     private static void handler(Socket clientSocket) throws IOException {
         byte[] bytes = new byte[1024];
-        System.out.println("准备read");
+        System.out.println("ready to read");
 
         int read = clientSocket.getInputStream().read(bytes);
-        System.out.println("read完成");
+        System.out.println("read completed");
         if (read != -1) {
-            System.out.println("接收到的数据为" + new String(bytes, 0, read));
+            System.out.println("received: " + new String(bytes, 0, read));
         }
-        clientSocket.getOutputStream().write("你好，客户端".getBytes(StandardCharsets.UTF_8));
+        clientSocket.getOutputStream().write("hello, client".getBytes(StandardCharsets.UTF_8));
         clientSocket.getOutputStream().flush();
     }
 }

@@ -13,6 +13,9 @@
         <module>001-spring-framework-demo-xml</module>
         <module>002-spring-framework-demo-java</module>
         <module>003-spring-framework-demo-annotation</module>
+        <module>106-linux-demo-socket-bio</module>
+        <module>107-linux-demo-socket-nio-select</module>
+        <module>108-linux-demo-socket-nio-epoll</module>
     </modules>
 
     <properties>

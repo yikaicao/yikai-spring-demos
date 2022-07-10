@@ -13,7 +13,7 @@ public class NioServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocketChannel serverScoektChannel = ServerSocketChannel.open();
-        serverScoektChannel.socket().bind(new InetSocketAddress(10201));
+        serverScoektChannel.socket().bind(new InetSocketAddress(10200));
         serverScoektChannel.configureBlocking(false);
         System.out.println("server started successfully");
 

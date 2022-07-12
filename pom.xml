@@ -17,6 +17,7 @@
         <module>107-linux-demo-socket-nio-select</module>
         <module>108-linux-demo-socket-nio-epoll</module>
         <module>110-java-concurrency-unsafe</module>
+        <module>111-java-concurrency-synchronized</module>
     </modules>
 
     <properties>

@@ -18,6 +18,7 @@
         <module>108-linux-demo-socket-nio-epoll</module>
         <module>110-java-concurrency-unsafe</module>
         <module>111-java-concurrency-synchronized</module>
+        <module>211-spring-database-redis-basic</module>
     </modules>
 
     <properties>

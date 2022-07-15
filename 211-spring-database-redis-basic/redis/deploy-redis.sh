@@ -1,0 +1,1 @@
+docker run -p 6379:6379 --name yikai-redis -d redis:7.0.3-alpine

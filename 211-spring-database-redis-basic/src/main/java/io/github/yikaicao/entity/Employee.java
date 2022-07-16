@@ -1,4 +1,4 @@
-package entity;
+package io.github.yikaicao.entity;
 
 import org.springframework.data.redis.core.RedisHash;
 

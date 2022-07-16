@@ -1,15 +1,15 @@
-package controller;
+package io.github.yikaicao.controller;
 
-import entity.Employee;
+import io.github.yikaicao.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class EmployeeController {
+
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
-
 
     @GetMapping("/jedis/hello")
     public Object testJedis() {
@@ -44,6 +44,11 @@ public class EmployeeController {
     @PostMapping("/employee")
     public void addEmployee(@RequestBody Employee employee) {
         redisTemplate.opsForValue().set(employee.getId(), employee);
+    }
+
+    @GetMapping("/")
+    public boolean root() {
+        return true;
     }
 
 }

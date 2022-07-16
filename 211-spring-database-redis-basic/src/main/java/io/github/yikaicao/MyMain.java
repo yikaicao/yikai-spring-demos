@@ -1,4 +1,4 @@
-package app;
+package io.github.yikaicao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

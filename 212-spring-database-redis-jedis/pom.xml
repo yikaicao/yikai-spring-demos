@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>yikai-spring-demos</artifactId>
@@ -9,31 +9,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>211-spring-database-redis-basic</artifactId>
+    <artifactId>212-spring-database-redis-jedis</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <spring.boot.starter.data.redis.version>2.7.1</spring.boot.starter.data.redis.version>
-        <spring.boot.starter.web.version>2.7.1</spring.boot.starter.web.version>
-        <jedis.client.version>2.7.1</jedis.client.version>
+        <spring-data-redis>2.7.0</spring-data-redis>
+        <spring-data-web>2.7.0</spring-data-web>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>${spring.boot.starter.data.redis.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>${jedis.client.version}</version>
+            <version>${spring-data-redis}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.boot.starter.web.version}</version>
+            <version>${spring-data-web}</version>
         </dependency>
     </dependencies>
 </project>

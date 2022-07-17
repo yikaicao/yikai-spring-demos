@@ -19,6 +19,7 @@
         <module>110-java-concurrency-unsafe</module>
         <module>111-java-concurrency-synchronized</module>
         <module>211-spring-database-redis-basic</module>
+        <module>212-spring-database-redis-jedis</module>
     </modules>
 
     <properties>

@@ -43,4 +43,8 @@ public class Employee implements Serializable {
     public void setSalary(Double salary) {
         this.salary = salary;
     }
+
+    public String toString() {
+        return id + " " + name + " " + age + " " + salary;
+    }
 }

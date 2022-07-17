@@ -9,11 +9,16 @@ import org.springframework.web.bind.annotation.*;
 public class EmployeeController {
 
     @Autowired
-    private RedisTemplate<String, Employee> redisTemplate;
+    private RedisTemplate<String, Object> redisTemplate;
 
     @PostMapping("/employee")
     public void addEmployee(@RequestBody Employee employee) {
         redisTemplate.opsForValue().set(employee.getId(), employee);
+    }
+
+    @GetMapping("/employee")
+    public String getEmployee(@RequestParam String id) {
+        return String.valueOf(redisTemplate.opsForValue().get(id));
     }
 
     @GetMapping("/")

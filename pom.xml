@@ -20,6 +20,7 @@
         <module>111-java-concurrency-synchronized</module>
         <module>211-spring-database-redis-basic</module>
         <module>212-spring-database-redis-jedis</module>
+        <module>051-java-jvm-oom</module>
     </modules>
 
     <properties>

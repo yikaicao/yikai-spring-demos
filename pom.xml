@@ -21,6 +21,7 @@
         <module>211-spring-database-redis-basic</module>
         <module>212-spring-database-redis-jedis</module>
         <module>051-java-jvm-oom</module>
+        <module>052-java-jvm-stackoverflow</module>
     </modules>
 
     <properties>

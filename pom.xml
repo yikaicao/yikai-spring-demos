@@ -22,6 +22,7 @@
         <module>212-spring-database-redis-jedis</module>
         <module>051-java-jvm-oom</module>
         <module>052-java-jvm-stackoverflow</module>
+        <module>112-java-concurrency-practice</module>
     </modules>
 
     <properties>
@@ -29,4 +30,26 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <!--region Lombok Configuration -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.8.0-beta4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.11</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+        <!-- endregion -->
+
+    </dependencies>
 </project>

@@ -1,3 +1,4 @@
+import io.github.yikaicao.task.AtomicIncrementTask;
 import io.github.yikaicao.task.DaemonTask;
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,4 +20,9 @@ public class PracticeMain {
     private static void submitDaemonTask() {
         executor.submit(new DaemonTask());
     }
+
+    private static void atomicIncrement() {
+        executor.submit(new AtomicIncrementTask());
+    }
+
 }

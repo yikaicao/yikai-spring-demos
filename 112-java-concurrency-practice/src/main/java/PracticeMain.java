@@ -14,7 +14,7 @@ public class PracticeMain {
 
         log.info("main started");
         submitDaemonTask();
-
+        atomicIncrement();
     }
 
     private static void submitDaemonTask() {

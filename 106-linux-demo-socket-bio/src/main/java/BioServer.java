@@ -10,7 +10,7 @@ public class BioServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(10200);
-        while (true) {
+        do {
             System.out.println("waiting for connection");
             Socket clientSocket = serverSocket.accept();
             System.out.println("client connected");
@@ -21,7 +21,7 @@ public class BioServer {
                     e.printStackTrace();
                 }
             });
-        }
+        } while (true);
     }
 
     private static void handler(Socket clientSocket) throws IOException {

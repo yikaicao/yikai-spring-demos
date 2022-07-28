@@ -23,6 +23,7 @@
         <module>051-java-jvm-oom</module>
         <module>052-java-jvm-stackoverflow</module>
         <module>112-java-concurrency-practice</module>
+        <module>326-java-mongo-connection-basic</module>
     </modules>
 
     <properties>
